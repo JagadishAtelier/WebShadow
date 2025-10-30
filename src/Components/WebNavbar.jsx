@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='flex justify-between items-center px-20 py-10'>
+    <div className='hidden lg:flex justify-between items-center lg:px-20 px-10 lg:py-10 md:py-10 py-5'>
         <p className='font-bold text-lg'>WEB SHADOWS</p>
-        <div className='flex gap-5'>
+        <div className='hidden  lg:flex gap-5'>
             <a href='/' className='text-sm font-semibold text-black'>WORK</a>
             <a href='/'className='text-sm font-semibold' >ABOUT</a>
             <a href='/'className='text-sm font-semibold' >TEAM</a>

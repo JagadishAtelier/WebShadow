@@ -47,6 +47,7 @@ body {
   color: var(--color-foreground);
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 h1,h2,h3,h4,h5,h6,p,a {
   font-family:"Geometric415Lite","Geometric415Lite Fallback";

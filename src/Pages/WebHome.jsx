@@ -7,7 +7,7 @@ import MouseTrail from '../Components/MouseTrail';
 import WhatweDo from '../Components/HomePage/WhatweDo';
 function Home() {
   return (
-    <div>
+    <div className='w-full'>
       <MouseTrail/>
       <WebNavbar/>
       <HeroSection/>

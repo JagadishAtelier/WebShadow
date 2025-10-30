@@ -12,20 +12,20 @@ function HeroSection() {
   ];
 
   return (
-    <div className="ms-30 me-10 relative mt-10">
+    <div className="lg:ms-30 md:ms-0 md:me-0 relative lg:mt-10 md:mt-10 mt-0 mx-5 w-full">
       <div className="flex justify-between items-start">
-        <div className="w-[900px]">
+        <div className="lg:w-[900px] w-full">
           {/* Row 1 */}
           <div className="flex items-center gap-3">
-            <h1 className="font-bold m-0 text-[8rem]">We</h1>
+            <h1 className="font-medium m-0 lg:text-[8rem] md:text-8xl text-5xl">We</h1>
             <img
               src={images[0]}
-              className="w-80 h-[25vh] rounded-md object-cover"
+              className="lg:w-80 md:w-80 lg:h-[25vh] md:h-[20vh] h-20 w-40  rounded-md object-cover"
               alt="main"
             />
-            <h1 className="font-medium text-[8rem]">Tell</h1>
+            <h1 className="font-medium lg:text-[8rem] md:text-8xl text-5xl">Tell</h1>
             <p
-              className="text-[#ff5623] font-bold text-[8rem]"
+              className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
@@ -35,10 +35,10 @@ function HeroSection() {
           </div>
 
           {/* Row 2 */}
-          <div className="flex justify-end">
-            <h1 className="font-medium text-[#ff5623] text-[8rem]">Web Shadows</h1>
+          <div className="flex lg:justify-end">
+            <h1 className="font-medium text-[#ff5623] lg:text-[8rem] md:text-8xl text-5xl">Web Shadows</h1>
             <p
-              className="text-black font-bold text-[8rem]"
+              className="text-black font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
@@ -48,20 +48,20 @@ function HeroSection() {
           </div>
 
           {/* Row 3 - Stacked Photo Pile before "Story" */}
-          <div className="flex items-center gap-8 mt-6">
-            <div className="relative w-[220px] h-[220px] photo-stack group">
+          <div className="flex items-center lg:gap-8 md:gap-8 gap-0 mt-6">
+            <div className="relative lg:w-[220px] md:w-[220px] w-50 md:h-[220px] h-[100px] photo-stack group">
               {images.map((src, index) => (
                 <img
                   key={index}
                   src={src}
                   alt={`stack-${index}`}
-                  className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-transform duration-700 ease-out stack-${index}`}
+                  className={`absolute inset-0 lg:w-full md:w-full w-40 h-20 md:h-[20vh] lg:h-full object-cover rounded-xl transition-transform duration-700 ease-out stack-${index}`}
                 />
               ))}
             </div>
-            <h1 className="font-medium text-[8rem]">Story</h1>
+            <h1 className="font-medium lg:text-[8rem] md:text-8xl text-5xl">Story</h1>
             <p
-              className="text-[#ff5623] font-bold text-[8rem]"
+              className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
@@ -71,7 +71,7 @@ function HeroSection() {
 
           </div>
         </div>
-        <div className="flex flex-col gap-3 items-center mt-10">
+        <div className="hidden lg:flex flex-col gap-3 items-center mt-10">
           <p className="rotate-90 mb-10">FOLLOW US</p>
           <ArrowDown />
           <div className="bg-[#ff5623] text-white px-3 py-2 rounded-full"><i class="bi bi-instagram"></i></div>
@@ -80,7 +80,7 @@ function HeroSection() {
           <div className="bg-[#ff5623] text-white px-3 py-2 rounded-full"><i class="bi bi-linkedin"></i></div>
         </div>
       </div>
-      <div className="ms-auto w-1/2 absolute -bottom-50 right-0">
+      <div className="hidden ms-auto lg:w-1/2 lg:absolute lg:-bottom-50 lg:right-0 w-full ">
         <p className="text-lg text-gray-700">
           <span className="text-[#ff5623]">(*)</span>We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team|
           Explore our ecosystem
