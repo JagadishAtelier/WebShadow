@@ -63,7 +63,7 @@ export default function MouseTrail() {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed top-0 left-0 z-50">
+    <div className="lg:block md:hidden hidden  pointer-events-none fixed top-0 left-0 z-50">
       {Array.from({ length: NUM_TRAILS }).map((_, i) => (
         <div
           key={i}
