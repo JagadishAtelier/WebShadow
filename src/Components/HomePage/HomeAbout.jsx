@@ -59,7 +59,7 @@ useEffect(() => {
       },
 
       // ======== Mobile / Small screens ========
-      "(max-width: 1023px)": function () {
+      "(min-width: 480px) and (max-width: 1023px)": function () {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: sectionRef.current,
@@ -103,6 +103,51 @@ useEffect(() => {
           "+=0.5"
         );
       },
+
+      "(max-width: 480px)": function () {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 100",
+            end: "+=900",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+          },
+        });
+
+        tl.from(circlesRef.current, {
+          opacity: 0,
+          y: 100,
+          stagger: 0.1,
+          duration: 1.5,
+          ease: "power2.out",
+        });
+
+                tl.to(
+          circlesRef.current,
+          {
+            x: (i) =>
+              i === 0
+                ? -180
+                : i === 1
+                ? -120
+                : i === 2
+                ? -60
+                : i === 3
+                ? 0
+                : i === 4
+                ? 60
+                : 120,
+            y: 0,
+            rotation: 0,
+            scale: 1,
+            duration: 2,
+            ease: "power3.inOut",
+          },
+          "+=0.5"
+        );
+      },
     });
   }, sectionRef);
 
@@ -111,7 +156,7 @@ useEffect(() => {
 
 
   return (
-    <div  className="hidden lg:mt-60 md:mt-10 mt-10 lg:mx-20 mx-10">
+    <div  className=" lg:mt-10 md:mt-10 mt-10 lg:px-20 px-10">
       <p className="font-semibold text-sm text-center">
         (Some achievements we’ve recently achieved)
       </p>
@@ -120,42 +165,42 @@ useEffect(() => {
       <div className="flex justify-center gap-6 mx-auto w-full mb-40 relative z-50">
         <p
           ref={(el) => (circlesRef.current[0] = el)}
-          className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 h-30 w-30  flex justify-center items-center text-lg font-semibold text-black 
+          className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 md:h-30 md:w-30 h-20 w-20  flex justify-center items-center text-lg font-semibold text-black 
                 backdrop-blur-xl bg-white/10 shadow-lg shadow-[#ff5623]/40 absolute top-0 left-[45%]"
         >
           Fogdog
         </p>
         <p
           ref={(el) => (circlesRef.current[1] = el)}
-          className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 h-30 w-30 flex justify-center items-center text-lg font-semibold text-black 
+          className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 md:h-30 md:w-30 h-20 w-20 flex justify-center items-center text-lg font-semibold text-black 
                 backdrop-blur-xl bg-white/10 shadow-lg shadow-[#ff5623]/40 absolute top-0 left-[45%]"
         >
           Spark
         </p>
         <p
           ref={(el) => (circlesRef.current[2] = el)}
-           className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 h-30 w-30 flex justify-center items-center text-lg font-semibold text-black 
+           className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 md:h-30 md:w-30 h-20 w-20 flex justify-center items-center text-lg font-semibold text-black 
                 backdrop-blur-xl bg-white/10 shadow-lg shadow-[#ff5623]/40 absolute top-0 left-[45%]"
         >
           Lumos
         </p>
         <p
           ref={(el) => (circlesRef.current[3] = el)}
- className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 h-30 w-30 flex justify-center items-center text-lg font-semibold text-black 
+ className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 md:h-30 md:w-30 h-20 w-20 flex justify-center items-center text-lg font-semibold text-black 
                 backdrop-blur-xl bg-white/10 shadow-lg shadow-[#ff5623]/40 absolute top-0 left-[45%]"
         >
           Aster
         </p>
         <p
           ref={(el) => (circlesRef.current[4] = el)}
-           className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 h-30 w-30 flex justify-center items-center text-lg font-semibold text-black 
+           className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 md:h-30 md:w-30 h-20 w-20 flex justify-center items-center text-lg font-semibold text-black 
                 backdrop-blur-xl bg-white/10 shadow-lg shadow-[#ff5623]/40 absolute top-0 left-[45%]"
         >
           Glow
         </p>
         <p
           ref={(el) => (circlesRef.current[5] = el)}
- className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 h-30 w-30 flex justify-center items-center text-lg font-semibold text-black 
+ className="border-2 border-[#ff5623] rounded-full lg:h-50 lg:w-50 md:h-30 md:w-30 h-20 w-20 flex justify-center items-center text-lg font-semibold text-black 
                 backdrop-blur-xl bg-white/10 shadow-lg shadow-[#ff5623]/40 absolute top-0 left-[45%]"
         >
           Nova

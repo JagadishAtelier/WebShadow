@@ -4,6 +4,12 @@ import { ArrowDown, Facebook, Globe2, Instagram, Linkedin, Star, Twitter } from 
 import HomeAbout from "./HomeAbout";
 
 function HeroSection() {
+  const data = [
+    "We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team",
+    "We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team",
+    "We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team",
+    "We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team",
+  ]
   const images = [
     "https://img.freepik.com/free-photo/male-indian-programmer-working-desktop-computer-white-desk-office_231208-3636.jpg?w=740&q=80",
     "https://img.freepik.com/free-photo/close-up-young-indian-programmer-using-computer-office_231208-3638.jpg?w=740&q=80",
@@ -12,9 +18,9 @@ function HeroSection() {
   ];
 
   return (
-    <div className="lg:ms-30 md:ms-0 md:me-0 relative lg:mt-10 md:mt-10 mt-0 mx-5 w-full md:px-10">
+    <div className="lg:ms-0 md:ms-0 md:me-0 relative lg:mt-10 md:mt-10 mt-0 w-full lg:px-0 px-5 md:px-10">
       <div className="flex justify-between items-start">
-        <div className="lg:w-[900px] w-full">
+        <div className="lg:w-[900px] w-full lg:ps-20 md:ps-0 ps-0">
           {/* Row 1 */}
           <div className="flex items-center gap-3">
             <h1 className="font-medium m-0 lg:text-[8rem] md:text-8xl text-5xl">We</h1>
@@ -71,7 +77,7 @@ function HeroSection() {
 
           </div>
         </div>
-        <div className="hidden lg:flex flex-col gap-3 items-center mt-10">
+        <div className="lg:flex hidden flex-col gap-3 items-center mt-10">
           <p className="rotate-90 mb-10">FOLLOW US</p>
           <ArrowDown />
           <div className="bg-[#ff5623] text-white px-3 py-2 rounded-full"><i class="bi bi-instagram"></i></div>
@@ -80,14 +86,27 @@ function HeroSection() {
           <div className="bg-[#ff5623] text-white px-3 py-2 rounded-full"><i class="bi bi-linkedin"></i></div>
         </div>
       </div>
-      <div className="hidden ms-auto lg:w-1/2 lg:absolute lg:-bottom-50 lg:right-0 w-full ">
+      {/* <div className="ms-auto lg:w-[500px] lg:absolute lg:-bottom-50 lg:right-70 w-full ">
         <p className="text-lg text-gray-700">
           <span className="text-[#ff5623]">(*)</span>We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team <span className="text-[#ff5623]">(*)</span> We are a communications ecosystem built to rethink how communication happens. Six agencies. One integrated team|
           Explore our ecosystem
 
         </p>
 
+      </div> */}
+<div className="lg:mt-50 md:mt-40 mt-20 w-full lg:px-10 px-5 ">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+    {data.map((item, index) => (
+      <div
+        key={index}
+        className="bg-[#ff5623] text-white lg:p-8 md:p-5 p-4 rounded-md text-lg text-center"
+      >
+        <p>{item}</p>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }

@@ -24,16 +24,16 @@
 
 /* On hover — fan out / split slightly like diagonal reveal */
 .photo-stack:hover .stack-0 {
-  transform: rotate(-2deg) translate(100px, 220px) scale(1.05);
+  transform: rotate(-4deg) translate(50px, 130px) scale(1.05);
 }
 .photo-stack:hover .stack-1 {
-  transform: rotate(-2deg) translate(60px, 100px) scale(1.05);
+  transform: rotate(-4deg) translate(20px, 40px) scale(1.05);
 }
 .photo-stack:hover .stack-2 {
-  transform: rotate(-4deg) translate(40px, -40px) scale(1.05);
+  transform: rotate(-5deg) translate(-10px, -50px) scale(1.05);
 }
 .photo-stack:hover .stack-3 {
-  transform: rotate(-6deg) translate(-10px, -100px) scale(1.05);
+  transform: rotate(-6deg) translate(-40px, -120px) scale(1.05);
 }
 
 /* Subtle shadow and smooth look */
@@ -49,4 +49,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media (max-width:768px) {
+  .photo-stack:hover .stack-0 {
+  transform: rotate(-2deg) translate(20px, 100px) scale(1.05);
+}
+.photo-stack:hover .stack-1 {
+  transform: rotate(-2deg) translate(10px, 30px) scale(1.05);
+}
+.photo-stack:hover .stack-2 {
+  transform: rotate(-4deg) translate(0px, -40px) scale(1.05);
+}
+.photo-stack:hover .stack-3 {
+  transform: rotate(-6deg) translate(-10px, -100px) scale(1.05);
+}
+}
+@media (max-width:480px) {
+  .photo-stack:hover .stack-0 {
+  transform: rotate(-2deg) translate(20px, 50px) scale(1.05);
+}
+.photo-stack:hover .stack-1 {
+  transform: rotate(-2deg) translate(10px, 10px) scale(1.05);
+}
+.photo-stack:hover .stack-2 {
+  transform: rotate(-4deg) translate(0px, -40px) scale(1.05);
+}
+.photo-stack:hover .stack-3 {
+  transform: rotate(-6deg) translate(-10px, -100px) scale(1.05);
+}
 }
