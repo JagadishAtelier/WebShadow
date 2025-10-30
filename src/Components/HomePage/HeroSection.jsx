@@ -12,7 +12,7 @@ function HeroSection() {
   ];
 
   return (
-    <div className="lg:ms-30 md:ms-0 md:me-0 relative lg:mt-10 md:mt-10 mt-0 mx-5 w-full">
+    <div className="lg:ms-30 md:ms-0 md:me-0 relative lg:mt-10 md:mt-10 mt-0 mx-5 w-full md:px-10">
       <div className="flex justify-between items-start">
         <div className="lg:w-[900px] w-full">
           {/* Row 1 */}
@@ -25,7 +25,7 @@ function HeroSection() {
             />
             <h1 className="font-medium lg:text-[8rem] md:text-8xl text-5xl">Tell</h1>
             <p
-              className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl"
+              className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
@@ -38,7 +38,7 @@ function HeroSection() {
           <div className="flex lg:justify-end">
             <h1 className="font-medium text-[#ff5623] lg:text-[8rem] md:text-8xl text-5xl">Web Shadows</h1>
             <p
-              className="text-black font-bold lg:text-[8rem] md:text-8xl text-5xl"
+              className="text-black font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
@@ -61,7 +61,7 @@ function HeroSection() {
             </div>
             <h1 className="font-medium lg:text-[8rem] md:text-8xl text-5xl">Story</h1>
             <p
-              className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl"
+              className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
