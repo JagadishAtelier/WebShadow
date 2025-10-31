@@ -22,7 +22,7 @@ function HeroSection() {
       <div className="flex justify-between items-start">
         <div className="lg:w-[900px] w-full lg:ps-20 md:ps-0 ps-0">
           {/* Row 1 */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 lg:mt-0 md:mt-0 mt-5">
             <h1 className="font-medium m-0 lg:text-[8rem] md:text-8xl text-5xl">We</h1>
             <img
               src={images[0]}
@@ -94,7 +94,7 @@ function HeroSection() {
         </p>
 
       </div> */}
-<div className="lg:mt-50 md:mt-40 mt-20 w-full lg:px-10 px-5 ">
+<div className="lg:mt-50 md:mt-40 mt-20 w-full lg:px-10">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
     {data.map((item, index) => (
       <div

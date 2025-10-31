@@ -156,7 +156,7 @@ useEffect(() => {
 
 
   return (
-    <div  className=" lg:mt-10 md:mt-10 mt-10 lg:px-20 px-10">
+    <div  className=" lg:mt-10 md:mt-10 mt-10 lg:px-20 px-5">
       <p className="font-semibold text-sm text-center">
         (Some achievements we’ve recently achieved)
       </p>
@@ -206,11 +206,8 @@ useEffect(() => {
           Nova
         </p>
       </div>
-      <div>
-        <h1 className="absolute top-0 lg:right-10 text-5xl md:text-8xl lg:text-[11rem]">WEB SHADOW</h1>
       </div>
-      </div>
-      <div className=" mt-10 lg:mt-80">
+      <div className="-mt-10 md:mt-10 lg:mt-60">
         <p className="lg:text-[3rem] text-[1.5rem] text-center">We combine talent, creativity, and cultural fluency—working across disciplines and geographies to deliver  
             <span className="bg-[#ff5623] text-white mx-2"> ideas that move </span> people and brands.</p>
       </div>
