@@ -44,7 +44,7 @@
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: #fcfcf4;
-  color: var(--color-foreground);
+  color: black;
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden;
   overscroll-behavior: none;
