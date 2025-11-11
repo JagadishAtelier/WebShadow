@@ -30,27 +30,27 @@ function HeroSection() {
               alt="main"
             />
             <h1 className="font-medium lg:text-[8rem] md:text-8xl text-5xl">Tell</h1>
-            <p
+            {/* <p
               className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
             >
               *
-            </p>
+            </p> */}
           </div>
 
           {/* Row 2 */}
           <div className="flex lg:justify-end">
             <h1 className="font-medium text-[#ff5623] lg:text-[8rem] md:text-8xl text-5xl">Web Shadows</h1>
-            <p
+            {/* <p
               className="text-black font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
             >
               *
-            </p>
+            </p> */}
           </div>
 
           {/* Row 3 - Stacked Photo Pile before "Story" */}
@@ -66,14 +66,14 @@ function HeroSection() {
               ))}
             </div>
             <h1 className="font-medium lg:text-[8rem] md:text-8xl text-5xl">Story</h1>
-            <p
+            {/* <p
               className="text-[#ff5623] font-bold lg:text-[8rem] md:text-8xl text-5xl lg:block md:block hidden"
               style={{
                 animation: "spin 3s linear infinite",
               }}
             >
               *
-            </p>
+            </p> */}
 
           </div>
         </div>
